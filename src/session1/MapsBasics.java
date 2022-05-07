@@ -1,15 +1,16 @@
 package session1;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
+import java.io.FileNotFoundException;
+import java.text.ParseException;
 public class MapsBasics {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException, FileNotFoundException {
 
+
+        String s = null;
+        System.out.println(s.length());
 
         //Maps is a key-value pair data structure
         //entry =  key-value pair data
@@ -28,26 +29,30 @@ public class MapsBasics {
 
         // HashMap implementation does not guarantee insertion order, hence  you cannot access maps with an index
 //            Key  , Value
-        Map<Integer, String > students = new HashMap<>();
+//        Map<Integer, String > students = new HashMap<>();
+//
+//        students.put(1234, "James Lawrence"); //this is called Entry
+//        students.put(8785, "Luke Peterson"); //another entry
+//        students.put(7567, "Oliver Thompson");
+//        students.put(6886, "Kevin Lee");
+//        students.put(5788, "James Lawrence");
+//
+//        students.put(8785, "Harry Potter");
+//        students.put(8785, "Spiderman");
+//
+//        System.out.println(  students );
+//        students.clear();
+//        System.out.println(students);
+//
+//        System.out.println(students.isEmpty());
 
-        students.put(1234, "James Lawrence"); //this is called Entry
-        students.put(8785, "Luke Peterson"); //another entry
-        students.put(7567, "Oliver Thompson");
-        students.put(6886, "Kevin Lee");
-        students.put(5788, "James Lawrence");
-
-        students.put(8785, "Harry Potter");
-        students.put(8785, "Spiderman");
-
-        System.out.println(  students );
-        students.clear();
-        System.out.println(students);
-
-        System.out.println(students.isEmpty());
-
-
-
-
-
+//
+//        System.out.println(convertDate("09/10/2013"));
+//        System.out.println(sumOfNumbersDivisible(1000));
     }
+
+
+
+
+
 }
